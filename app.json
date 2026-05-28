@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "ShieldNet Secure",
+    "slug": "shieldnet-secure",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E21"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access needed for QR code scanning",
+        "NSLocationWhenInUseUsageDescription": "Location access needed for weather updates"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E21"
+      },
+      "permissions": [
+        "RECEIVE_SMS",
+        "READ_SMS",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "VIBRATE",
+        "POST_NOTIFICATIONS",
+        "FOREGROUND_SERVICE"
+      ],
+      "package": "com.shieldnet.secure"
+    },
+    "plugins": [
+      "expo-localization",
+      "expo-font",
+      "expo-notifications"
+    ]
+  }
+}
